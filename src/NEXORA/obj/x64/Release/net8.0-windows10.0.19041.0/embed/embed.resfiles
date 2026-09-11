@@ -1,0 +1,16 @@
+App.xbf
+MainWindow.xbf
+Views\AIAdvisorPage.xbf
+Views\BenchmarkPage.xbf
+Views\DashboardPage.xbf
+Views\GameLibraryPage.xbf
+Views\GameOptimizerPage.xbf
+Views\NetworkPage.xbf
+Views\OptimizationHistoryPage.xbf
+Views\PcOptimizerPage.xbf
+Views\PerformancePage.xbf
+Views\ProcessManagerPage.xbf
+Views\RestoreCenterPage.xbf
+Views\SettingsPage.xbf
+Views\StartupManagerPage.xbf
+Views\StorageCleanerPage.xbf

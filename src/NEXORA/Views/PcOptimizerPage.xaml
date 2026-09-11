@@ -1,0 +1,107 @@
+<Page x:Class="NEXORA.Views.PcOptimizerPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Background="{StaticResource NxBgBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <StackPanel Grid.Row="0" Margin="32,28,32,16" Spacing="14">
+            <TextBlock Text="PC OPTIMIZER"
+                       FontFamily="Segoe UI Variable Display"
+                       FontSize="28"
+                       FontWeight="SemiBold"
+                       CharacterSpacing="40"
+                       Foreground="{StaticResource NxTextPriBrush}"/>
+
+            <!-- Level selector + action buttons -->
+            <Grid ColumnSpacing="12">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" Orientation="Horizontal" Spacing="8"
+                            VerticalAlignment="Center">
+                    <RadioButton x:Name="LevelSafe"
+                                 Content="SAFE"
+                                 GroupName="Level"
+                                 Foreground="{StaticResource NxSuccessBrush}"
+                                 Checked="Level_Checked" Tag="Safe"/>
+                    <RadioButton x:Name="LevelBalanced"
+                                 Content="BALANCED"
+                                 GroupName="Level"
+                                 Foreground="{StaticResource NxAccentBrush}"
+                                 Checked="Level_Checked" Tag="Balanced"/>
+                    <RadioButton x:Name="LevelPerformance"
+                                 Content="PERFORMANCE"
+                                 GroupName="Level"
+                                 Foreground="{StaticResource NxWarningBrush}"
+                                 Checked="Level_Checked" Tag="Performance"/>
+                </StackPanel>
+
+                <Button x:Name="ScanBtn" Grid.Column="1"
+                        Content="SCAN"
+                        Style="{StaticResource NxOutlineBtn}"
+                        Click="ScanBtn_Click"/>
+                <Button x:Name="ApplyBtn" Grid.Column="2"
+                        Content="APPLY SELECTED"
+                        Style="{StaticResource NxPrimaryBtn}"
+                        Click="ApplyBtn_Click"
+                        IsEnabled="False"/>
+            </Grid>
+
+            <TextBlock x:Name="StatusText"
+                       Text="Select an optimization level and click Scan."
+                       FontSize="12"
+                       Foreground="{StaticResource NxTextSecBrush}"/>
+
+            <ProgressBar x:Name="ProgressBar"
+                         Style="{StaticResource NxBar}"
+                         Value="0" Visibility="Collapsed"/>
+        </StackPanel>
+
+        <!-- Optimization list -->
+        <ScrollViewer Grid.Row="1" Margin="32,0,32,0"
+                      VerticalScrollBarVisibility="Auto">
+            <StackPanel x:Name="OptimizationList" Spacing="6"/>
+        </ScrollViewer>
+
+        <!-- Footer -->
+        <Border Grid.Row="2" Margin="32,8,32,24"
+                Background="{StaticResource NxSurface1Brush}"
+                BorderBrush="{StaticResource NxBorderBrush}"
+                BorderThickness="1"
+                CornerRadius="12"
+                Padding="20,14">
+            <Grid ColumnSpacing="8">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="FooterText"
+                           Grid.Column="0"
+                           Text="No optimizations loaded."
+                           FontSize="12"
+                           Foreground="{StaticResource NxTextSecBrush}"
+                           VerticalAlignment="Center"/>
+                <Button x:Name="SelectAllBtn" Grid.Column="1"
+                        Content="SELECT ALL"
+                        Style="{StaticResource NxOutlineBtn}"
+                        Click="SelectAllBtn_Click"/>
+                <Button x:Name="RollbackBtn" Grid.Column="2"
+                        Content="ROLLBACK LAST"
+                        Style="{StaticResource NxDangerBtn}"
+                        Click="RollbackBtn_Click"
+                        IsEnabled="False"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

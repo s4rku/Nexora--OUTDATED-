@@ -1,0 +1,12 @@
+D:\NEXORA\src\NEXORA.Core\bin\x64\Release\net8.0-windows10.0.19041.0\NEXORA.Core.deps.json
+D:\NEXORA\src\NEXORA.Core\bin\x64\Release\net8.0-windows10.0.19041.0\NEXORA.Core.dll
+D:\NEXORA\src\NEXORA.Core\bin\x64\Release\net8.0-windows10.0.19041.0\NEXORA.Core.pdb
+D:\NEXORA\src\NEXORA.Core\obj\x64\Release\net8.0-windows10.0.19041.0\NEXORA.Core.csproj.AssemblyReference.cache
+D:\NEXORA\src\NEXORA.Core\obj\x64\Release\net8.0-windows10.0.19041.0\NEXORA.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\NEXORA\src\NEXORA.Core\obj\x64\Release\net8.0-windows10.0.19041.0\NEXORA.Core.AssemblyInfoInputs.cache
+D:\NEXORA\src\NEXORA.Core\obj\x64\Release\net8.0-windows10.0.19041.0\NEXORA.Core.AssemblyInfo.cs
+D:\NEXORA\src\NEXORA.Core\obj\x64\Release\net8.0-windows10.0.19041.0\NEXORA.Core.csproj.CoreCompileInputs.cache
+D:\NEXORA\src\NEXORA.Core\obj\x64\Release\net8.0-windows10.0.19041.0\NEXORA.Core.dll
+D:\NEXORA\src\NEXORA.Core\obj\x64\Release\net8.0-windows10.0.19041.0\refint\NEXORA.Core.dll
+D:\NEXORA\src\NEXORA.Core\obj\x64\Release\net8.0-windows10.0.19041.0\NEXORA.Core.pdb
+D:\NEXORA\src\NEXORA.Core\obj\x64\Release\net8.0-windows10.0.19041.0\ref\NEXORA.Core.dll
